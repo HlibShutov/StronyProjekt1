@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+nav {
+  background-clip: content-box;
+  border-radius: 2rem;
+  box-sizing: content-box;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: black;
+  width: 70px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+nav > div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav .selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-align: center;
+  z-index: 1;
+}
+
+.logo .icon {
+  width: 30px;
+}

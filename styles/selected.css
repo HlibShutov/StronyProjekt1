@@ -1,0 +1,42 @@
+nav .selected {
+  position: relative;
+  height: 40px;
+  width: 70px;
+  background-color: #a1a1a1;
+  text-align: center;
+  --main-color: #a1a1a1;
+  --bottom-b: -30px;
+  --bottom-a: 40px;
+}
+
+nav .selected::before {
+  border-top-left-radius: 15px;
+}
+
+nav .selected::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: var(--bottom-b);
+  height: 30px;
+  width: 100%;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -15px 0 0 var(--main-color);
+  z-index: -0;
+}
+
+nav .selected::after {
+  border-bottom-left-radius: 15px;
+}
+
+nav .selected::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: var(--bottom-a);
+  height: 50px;
+  width: 100%;
+  left: 0;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 25px 0 0 var(--main-color);
+}
