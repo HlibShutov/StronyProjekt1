@@ -1,0 +1,215 @@
+.search > input {
+  position: relative;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+div.search:has(input:focus) {
+  outline: 1px dotted;
+}
+
+div.search:has(input:focus) input {
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5%;
+  height: 85%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+div.search {
+  flex: 1;
+}
+
+header > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  background-color: #afafaf;
+  border-radius: 100vh;
+  padding: 7px;
+}
+
+.avatar {
+  background-color: #797979;
+  border-radius: 100%;
+  width: 20px;
+  aspect-ratio: 1;
+  font-size: 0.5em;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account span {
+  font-size: 90%;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+main > section,
+div,
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+.top {
+  padding: 20px 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.statistic1,
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic1 {
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.downloads,
+.orders {
+  border: 1px solid #afafaf;
+  border-radius: 2rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: auto;
+  gap: 10px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.downloads > div,
+.orders > div {
+  gap: 10px;
+}
+
+.downloads div,
+.orders div {
+  display: flex;
+  align-items: center;
+}
+.downloads div > div,
+.orders > div > div {
+  background-color: #afafaf;
+  border-radius: 2rem;
+  padding: 5px;
+}
+
+div.banner {
+  background-image: url(../assets/banner.png);
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 2rem;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.banner > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.banner > button {
+  border-radius: 2rem;
+  background-color: #afafaf;
+  padding: 15px;
+}
+
+section.bottom {
+  display: flex;
+  height: 50%;
+
+  width: 100%;
+  justify-content: space-around;
+  gap: 10%;
+}
+
+section.bottom > div.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accounts img {
+  width: 50px;
+  border-radius: 2rem;
+}
+
+.accounts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accounts > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 10px 0px 0px;
+}
+
+.accounts > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.categories .selected {
+  background-color: black;
+  border-radius: 2rem;
+  padding: 10px;
+  color: white;
+}

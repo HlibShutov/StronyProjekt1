@@ -12,13 +12,35 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/selected.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/diagram.css" />
 
     <!--icons-->
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link
       rel="stylesheet"
@@ -83,16 +105,19 @@
     <main>
       <header>
         <div class="search">
+          <span class="material-symbols-outlined"> search </span>
           <input type="search" placeholder="search" />
         </div>
-        <img
-          class="icon"
-          src="./assets/icons/notification.svg"
-          alt="notification"
-        />
-        <div class="account">
-          <img class="icon" src="./assets/icons/menu.svg" alt="menu" />
-          <img class="icon" src="./assets/icons/avatar.svg" alt="avatar" />
+        <div class="right">
+          <a><span class="material-symbols-outlined"> notifications </span></a>
+          <div class="account">
+            <a href="#"
+              ><span class="material-symbols-outlined"> more_vert </span></a
+            >
+            <div class="avatar">
+              <small>MN</small>
+            </div>
+          </div>
         </div>
       </header>
       <section class="top">
@@ -101,11 +126,7 @@
             <div>
               <div>
                 <span>+16%</span>
-                <img
-                  class="icon"
-                  src="./assets/icons/download.svg"
-                  alt="download"
-                />
+                <span class="material-symbols-outlined"> download </span>
               </div>
               <span>downloads</span>
             </div>
@@ -115,11 +136,7 @@
             <div>
               <div>
                 <span>+8%</span>
-                <img
-                  class="icon"
-                  src="./assets/icons/microfone.svg"
-                  alt="microfone"
-                />
+                <span class="material-symbols-outlined"> mic </span>
               </div>
               <span>live orders</span>
             </div>
@@ -139,7 +156,7 @@
       <section class="bottom">
         <div class="left">
           <h2>Top performing podcasts</h2>
-          <div class="table">
+          <div class="diagram1">
             <ul class="column">
               <li>200</li>
               <li>150</li>
@@ -147,39 +164,63 @@
               <li>50</li>
               <li>0</li>
             </ul>
-            <div class="diagram">
-              <hr />
-              <hr />
-              <hr />
-              <hr />
-              <div class="block">
-                <div></div>
-                <div></div>
+            <div class="table">
+              <div class="diagram">
+                <div class="lines">
+                  <hr />
+                  <hr />
+                  <hr />
+                  <hr />
+                </div>
+                <div class="block" id="first">
+                  <div class="active">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="block" id="second">
+                  <div class="active">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="block" id="third">
+                  <div class="active">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="block" id="fourth">
+                  <div class="active">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="block" id="fifth">
+                  <div class="active">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div></div>
+                  <div></div>
+                </div>
               </div>
-              <div class="block">
-                <div></div>
-                <div></div>
-              </div>
-              <div class="block">
-                <div></div>
-                <div></div>
-              </div>
-              <div class="block">
-                <div></div>
-                <div></div>
-              </div>
-              <div class="block">
-                <div></div>
-                <div></div>
-              </div>
+              <ul class="horizontal">
+                <li>Stoic</li>
+                <li>Weekly show</li>
+                <li>Stereo pro</li>
+                <li>Run podcast</li>
+                <li>Morning brew</li>
+              </ul>
             </div>
-            <ul class="horizontal">
-              <li>Stoic</li>
-              <li>Weekly show</li>
-              <li>Stereo pro</li>
-              <li>Run podcast</li>
-              <li>Morning brew</li>
-            </ul>
           </div>
         </div>
         <div class="right">
@@ -189,28 +230,28 @@
           </div>
           <div class="accounts">
             <div>
-              <img src="" alt="" />
+              <img src="./assets/avatar1.jpg" alt="" />
               <div>
-                <span></span>
-                <span></span>
+                <span>Earth Tones</span>
+                <span>Wade Warren</span>
               </div>
-              <span></span>
+              <span>2d</span>
             </div>
             <div>
-              <img src="" alt="" />
+              <img src="./assets/avatar2.jpg" alt="" />
               <div>
-                <span></span>
-                <span></span>
+                <span>Around the World</span>
+                <span>Guy Hawkins</span>
               </div>
-              <span></span>
+              <span>2d</span>
             </div>
             <div>
-              <img src="" alt="" />
+              <img src="./assets/avatar3.jpg" alt="" />
               <div>
-                <span></span>
-                <span></span>
+                <span>World of Kids</span>
+                <span>Adam Tharne</span>
               </div>
-              <span></span>
+              <span>2d</span>
             </div>
           </div>
         </div>

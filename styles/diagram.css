@@ -1,0 +1,142 @@
+section.bottom > div.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5%;
+}
+
+section.bottom > div.left > div.diagram {
+  display: flex;
+}
+
+hr {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+}
+
+.lines {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+
+ul.horizontal > li {
+  float: left;
+}
+.diagram1 {
+  display: flex;
+  height: 100%;
+}
+div.diagram {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.block > div {
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  margin: 0 10px;
+}
+
+#first > div {
+  height: 50%;
+}
+
+#first div:nth-child(3) {
+  background-color: aqua;
+}
+
+#first div:nth-child(2) {
+  background-color: rgb(162, 255, 255);
+}
+
+#second > div {
+  height: 40%;
+}
+
+#second div:nth-child(3) {
+  background-color: rgb(43, 255, 0);
+}
+
+#second div:nth-child(2) {
+  background-color: rgb(162, 255, 198);
+}
+
+#third > div {
+  height: 30%;
+}
+
+#third div:nth-child(3) {
+  background-color: rgb(255, 0, 0);
+}
+
+#third div:nth-child(2) {
+  background-color: rgb(255, 162, 162);
+}
+
+#fourth > div {
+  height: 20%;
+}
+
+#fourth div:nth-child(3) {
+  background-color: rgb(0, 51, 255);
+}
+
+#fourth div:nth-child(2) {
+  background-color: rgb(162, 207, 255);
+}
+
+#fifth > div {
+  height: 10%;
+}
+
+#fifth div:nth-child(3) {
+  background-color: rgb(255, 0, 157);
+}
+
+#fifth div:nth-child(2) {
+  background-color: rgb(255, 162, 247);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.horizontal {
+  display: flex;
+  gap: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.active {
+  opacity: 0;
+  width: 6rem !important;
+  height: 50px !important;
+  background-color: burlywood;
+}
+
+#first:hover > .active {
+  opacity: 1;
+  transition: 300ms;
+}
