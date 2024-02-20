@@ -11,6 +11,8 @@ section.bottom > div.left > div.diagram {
 
 hr {
   width: 100%;
+  border-style: dashed;
+  color: rgb(198, 197, 197);
 }
 
 .table {
