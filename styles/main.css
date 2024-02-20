@@ -206,9 +206,14 @@ section.bottom > div.right {
   justify-content: center;
   align-items: center;
   gap: 5%;
+  font-size: 0.8rem;
 }
 
 .categories .selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: black;
   border-radius: 2rem;
   padding: 10px;
