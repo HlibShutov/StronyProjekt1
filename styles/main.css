@@ -25,6 +25,7 @@ main {
   width: 100%;
   margin: 5%;
   height: 85%;
+  font-family: sans-serif;
 }
 
 header {
@@ -168,7 +169,7 @@ section.bottom {
 
   width: 100%;
   justify-content: space-around;
-  gap: 10%;
+  gap: 7%;
 }
 
 section.bottom > div.right {
