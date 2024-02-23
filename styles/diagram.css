@@ -129,6 +129,7 @@ div.diagram {
   gap: 10%;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 div.active {

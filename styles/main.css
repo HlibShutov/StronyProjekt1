@@ -223,3 +223,65 @@ section.bottom > div.right {
   padding: 10px;
   color: white;
 }
+
+@media screen and (max-width: 786px) {
+  :root {
+    font-size: 80%;
+  }
+
+  body {
+    background-color: var(--background-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+  }
+
+  .navigation > ul {
+    flex-direction: row;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 15;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .lines {
+    display: none;
+  }
+
+  .statistic1 {
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .bottom {
+    padding-top: 20%;
+  }
+  div {
+    max-width: 100%;
+  }
+  .top {
+    gap: 5%;
+  }
+  .bottom > .right {
+    padding-top: 10%;
+  }
+}
