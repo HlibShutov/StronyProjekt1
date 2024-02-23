@@ -241,7 +241,9 @@ section.bottom > div.right {
     display: flex;
     flex-direction: row;
     flex: 1;
-    width: 100%;
+    width: 90%;
+    padding-left: 20px;
+    border-radius: 0;
   }
 
   .navigation > ul {
@@ -283,5 +285,31 @@ section.bottom > div.right {
   }
   .bottom > .right {
     padding-top: 10%;
+  }
+  .diagram {
+    justify-content: center !important;
+  }
+  .diagram1 {
+    width: 90%;
+  }
+  .block {
+    width: 15vw !important;
+    margin: 0 !important;
+  }
+  .bottom > .left {
+    padding-top: 15%;
+  }
+  .accounts > div {
+    justify-content: space-around;
+  }
+  nav .selected::before {
+    display: none;
+  }
+  nav .selected::after {
+    display: none;
+  }
+  nav ul > li {
+    display: flex;
+    align-items: center;
   }
 }
