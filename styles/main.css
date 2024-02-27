@@ -224,6 +224,13 @@ section.bottom > div.right {
   color: white;
 }
 
+.banner:hover {
+  box-shadow: 0 0 0 5px red;
+}
+.statistic1 > div:hover {
+  box-shadow: 0 0 0 5px red;
+}
+
 @media screen and (max-width: 786px) {
   :root {
     font-size: 80%;
